@@ -11,7 +11,7 @@ const EditProfile = () => {
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
-  const API = process.env.REACT_APP_API_URL;
+  const API_BASE = process.env.REACT_APP_API_URL; // Adjust if needed
  // Adjust if needed
 
   useEffect(() => {
