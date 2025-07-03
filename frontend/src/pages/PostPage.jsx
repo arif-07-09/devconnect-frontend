@@ -9,7 +9,6 @@ const PostPage = () => {
   const token = localStorage.getItem('token');
   const API = process.env.REACT_APP_API_URL;
 
-  const API_BASE =  // Adjust if needed
   useEffect(() => {
     if (!token) return;
 
