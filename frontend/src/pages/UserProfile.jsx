@@ -8,6 +8,8 @@ const UserProfile = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [posts, setPosts] = useState([]);
+  
+  const [myId, setMyId] = useState(null);
   const [likes, setLikes] = useState({});
   const [followStatus, setFollowStatus] = useState("");
   const [error, setError] = useState("");
