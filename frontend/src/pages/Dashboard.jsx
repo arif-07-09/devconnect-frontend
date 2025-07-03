@@ -8,7 +8,8 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
-  const API = import.meta.env.VITE_API_URL; // for Vite
+  const API = process.env.REACT_APP_API_URL;
+
 
 
   useEffect(() => {
