@@ -8,7 +8,8 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
-  const API = 'http://localhost:5000';
+  const API = import.meta.env.VITE_API_URL; // for Vite
+
 
   useEffect(() => {
     if (!token) return navigate('/login');
