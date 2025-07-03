@@ -7,8 +7,9 @@ const PostPage = () => {
   const [post, setPost] = useState(null);
   const [error, setError] = useState('');
   const token = localStorage.getItem('token');
-  const API = 'http://localhost:5000';
+  const API = process.env.REACT_APP_API_URL;
 
+  const API_BASE =  // Adjust if needed
   useEffect(() => {
     if (!token) return;
 
