@@ -8,7 +8,8 @@ const Login = () => {
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
-
+  
+  const API_BASE = process.env.REACT_APP_API_URL; // Adjust if needed
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
